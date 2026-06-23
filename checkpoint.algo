@@ -1,0 +1,31 @@
+ALGORITHM Sentence_Analyzer
+VARIABLES:
+    char: INTEGER (tracks the total characters)
+    word: INTEGER (tracks the number of words)
+    voyelle: INTEGER (tracks the number of vowels)
+    char: CHARACTER (tracks the current character being read)
+
+BEGIN
+    char ← 0
+    word ← 0
+    voyelle ← 0
+
+    REPEAT
+        Read(char)
+        char ← char + 1
+        
+        IF char = 'a' OR char = 'e' OR char = 'i' OR char = 'o' OR char = 'u' OR
+           char = 'A' OR char = 'E' OR char = 'I' OR char = 'O' OR char = 'U' THEN
+            voyelle ← voyelle + 1
+        END_IF
+        
+        IF char = ' ' THEN
+            word ← word + 1
+        ELSE IF char = '.' THEN
+            wordt ← word + 1
+        END_IF
+    UNTIL char = '.'
+    Write("Total characters is: ", char)
+    Write("Total words is: ", word)
+    Write("Total vowels is: ", voyelle)
+END
