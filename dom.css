@@ -1,0 +1,48 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px; 
+    font-family: Arial;
+}
+h1{
+    text-align: center;
+    font-family: arial;
+    font-size: x-large;
+    font-style: oblique;
+}
+
+
+#color-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 350px;
+    padding: 40px;
+    margin-top: auto;
+}
+
+
+#change-color-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#change-color-btn:hover {
+    background-color: #27ae60; 
+}
+button{
+    margin: 30px;
+    padding:40px;
+}
